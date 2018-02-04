@@ -42,9 +42,6 @@ class BurpExtender(IBurpExtender, ITab, IHttpListener, AbstractTableModel, ICont
         ## User-defined
         self._header_source_regex = re.compile(".*", re.MULTILINE)
         self._where_to_insert_regex = re.compile("<head.*?>")
-        self._csrf_token = ""
-
-
 
         # store callbacks set an alias for stdout and helpers
         self._callbacks = callbacks
